@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login pag</title>
+  <style>
+   
+    .form{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+  border: 2px solid orangered;
+  width: 20rem;
+  left: 35%;
+  margin: 7rem 0;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+}
+
+.name{
+  height: 2rem;
+  font-size: medium;
+  margin-bottom: 0.5rem;
+}
+
+.email{
+  height: 2rem;
+  font-size: medium;
+  margin: 0.5rem 0 0.5rem 0;
+
+}
+
+.message{
+  height: 2rem;
+  font-size: medium;
+  margin: 0.5rem 0 0.5rem 0;
+  padding-bottom: 6rem;
+
+}
+
+.button{
+  height: 2rem;
+}
+  </style>
+</head>
+<body>
+
+  <form action='https://api.web3forms.com/submit' method='POST' class='form'>
+    <input type="hidden" name="access_key" value='81ab887d-2925-42b0-9836-a684efe9f3f0' />
+    <input type="text" name="user_name" class='name' placeholder='Your Name' autoComplete='on' required />
+    <input type="email" name="user_email" class='email' placeholder='Your Email' autoComplete='on' required />
+    <textarea name="message" class='message' placeholder='Type here for message'></textarea>
+    <input type="submit" value="Send" class='button'  />
+  </form>
+
+<script>
+</script>
+
+</body>
+</html>
